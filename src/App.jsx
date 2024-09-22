@@ -66,7 +66,6 @@ function App() {
       {gallerys.length > 0 && (
         <ImageGallery gallerys={gallerys} openModal={openModal} />
       )}
-
       {!gallerys.length > 0 && !isError && <p>Sorry gallerys is not photos </p>}
       {gallerys.length > 0 && !isLoading && (
         <LoadMoreBtn loadMoreImages={loadMoreImages} />
